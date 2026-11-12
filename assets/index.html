@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'"
+    />
+    <title>口袋游戏库</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="catalog.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <aside id="rail">
+      <a class="brand" href="#home" aria-label="口袋游戏库首页"
+        ><span class="brand-mark" aria-hidden="true"
+          ><i data-icon="layers"></i
+        ></span>
+        <div>Pocket<span>游戏资源库</span></div></a
+      >
+      <nav aria-label="主导航">
+        <button data-nav="home" class="active">
+          <i data-icon="compass"></i><span>发现游戏</span>
+        </button>
+        <button data-nav="sources">
+          <i data-icon="layers"></i><span>可用来源</span>
+        </button>
+        <button data-nav="downloads">
+          <i data-icon="download"></i><span>下载任务</span
+          ><b id="taskCount"></b>
+        </button>
+        <button data-nav="library">
+          <i data-icon="gamepad"></i><span>本地游戏</span>
+        </button>
+        <button data-nav="settings">
+          <i data-icon="settings"></i><span>连接设置</span>
+        </button>
+      </nav>
+      <div class="rail-foot">
+        <span class="online-dot"></span> Omnidroid 配套工具
+      </div>
+    </aside>
+    <div id="shell">
+      <header>
+        <div>
+          <span class="eyebrow" id="eyebrow">口袋游戏库</span
+          ><span class="header-title" id="headerTitle">发现游戏</span>
+        </div>
+        <div class="header-actions">
+          <button id="folderStatus" class="subtle">
+            <span class="online-dot"></span><span>连接 ROMs</span></button
+          ><button id="openOmni" class="primary compact">
+            <i data-icon="play"></i>Omnidroid
+          </button>
+        </div>
+      </header>
+      <main id="main" tabindex="0">
+        <div class="empty">正在打开游戏库…</div>
+      </main>
+    </div>
+    <dialog id="modal">
+      <div id="modalBody"></div>
+      <button id="closeModal" class="close" aria-label="关闭弹窗">×</button>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

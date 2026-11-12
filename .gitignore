@@ -1,0 +1,16 @@
+build/
+libs/
+tools/
+*.keystore
+dist/
+node_modules/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.jks
+*.aab
+.DS_Store
+.env
+.env.*
+!.env.example
+local.properties

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "libs/jlibtorrent-2.0.15.3-sources.jar",
+    "url": "https://github.com/frostwire/frostwire-jlibtorrent/releases/download/release/2.0.15.3/jlibtorrent-2.0.15.3-sources.jar",
+    "sha256": "4eba352f63f800d5fad4eac5478f4b0febc32128bcf897774036ae555606f137"
+  },
+  {
+    "path": "libs/jlibtorrent-2.0.15.3.jar",
+    "url": "https://github.com/frostwire/frostwire-jlibtorrent/releases/download/release/2.0.15.3/jlibtorrent-2.0.15.3.jar",
+    "sha256": "ca859106adcf31a1cd05392fc56f4529cbbff1a2185b1f59f4fdaa84c8d4b5c9"
+  },
+  {
+    "path": "libs/jlibtorrent-android-arm64-2.0.15.3.jar",
+    "url": "https://github.com/frostwire/frostwire-jlibtorrent/releases/download/release/2.0.15.3/jlibtorrent-android-arm64-2.0.15.3.jar",
+    "sha256": "202ef4aecfab0f0b51a9ef6d32608c7e85ac687374b8f7f200cc811b621bfb9c"
+  },
+  {
+    "path": "tools/google-java-format.jar",
+    "url": "https://github.com/google/google-java-format/releases/download/v1.24.0/google-java-format-1.24.0-all-deps.jar",
+    "sha256": "812f805f58112460edf01bf202a8e61d0fd1f35c0d4fabd54220640776ec57a1"
+  }
+]

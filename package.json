@@ -1,0 +1,24 @@
+{
+  "name": "pocket-shelf",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Android game catalog and download companion for Omnidroid",
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/catalog.test.cjs",
+    "test:ui": "node tests/ui.cjs",
+    "test:android:sources": "node tests/android-sources.cjs",
+    "test:android:scroll": "node tests/android-scroll.cjs",
+    "format": "prettier --write assets/index.html assets/style.css assets/app.js assets/catalog.js tests/*.cjs docs/*.md README.md package.json .prettierrc.json dependencies.json",
+    "format:check": "prettier --check assets/index.html assets/style.css assets/app.js assets/catalog.js tests/*.cjs docs/*.md README.md package.json .prettierrc.json dependencies.json",
+    "check:syntax": "node --check assets/app.js && node --check assets/catalog.js && node --check tests/ui.cjs && node --check tests/android-sources.cjs && node --check tests/android-scroll.cjs",
+    "check": "npm run format:check && npm run check:syntax && npm test"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0",
+    "prettier": "3.10.1"
+  }
+}
